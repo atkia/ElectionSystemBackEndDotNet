@@ -6,15 +6,15 @@ using System.Text;
 
 namespace ServerApp.Model
 {
-    public class ResultInfo
+    public class VoteTracker
     {
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
 
-        public String CandidateName { get; set; }
-        public String Symbol { get; set; }
-        public int Count { get; set; }
+        public long NID { get; set; }
+        public string ElectionName { get; set; }
+        public bool voted { get; set; }
     }
 }

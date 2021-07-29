@@ -11,8 +11,7 @@ namespace ServerApp.Model
 
         public DbSet<VoterInfo> Voters { get; set; }
         public DbSet<AdminInfo> Admins { get; set; }
-    //    public DbSet<CollectVote> CollectVotes { get; set; }
-        public DbSet<ResultInfo> ResultInfos { get; set; }
+        public DbSet<VoteTracker> VoteTrackers { get; set; }
         public DbSet<CandidateInfo> CandidateInfos{ get; set; }
 
         public DbSet<CollectVote> CollectVotes { get; set; }
